@@ -1,0 +1,13 @@
+@import url(https://fonts.googleapis.com/css?family=Rock+Salt);
+@import url(https://fonts.googleapis.com/css?family=Comfortaa);
+@import url(https://fonts.googleapis.com/css?family=Pangolin);
+@import url(https://fonts.googleapis.com/css?family=Iansui);
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+main-body {
+    background-color: rgb(186, 186, 186);
+}
