@@ -1,5 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Rock+Salt);
 @import url(https://fonts.googleapis.com/css?family=Comfortaa);
+@import url(https://fonts.googleapis.com/css?family=Rock+Salt);
 @import url(https://fonts.googleapis.com/css?family=Pangolin);
 @import url(https://fonts.googleapis.com/css?family=Iansui);
 
@@ -9,7 +9,7 @@
 }
 
 .main-body {
-    background-color: rgb(132, 132, 130);
+    background-color: rgb(212, 175, 55);
     position: relative;
     width: 100%;
     height: 100%;
@@ -24,14 +24,6 @@
     border: 2px solid purple;
 }
 
-.navbar .logo {
-    display: flex;
-    margin-right: 100px;
-    width: auto;
-    height: 100px;
-    border: 2px solid purple;
-}
-
 .navbar ul {
     align-items: center;
 	display: flex;
@@ -39,6 +31,15 @@
 	float: right;
     margin: 0px;
     padding: 5px 20px;
+    width: 100%
+    border: 2px solid purple;
+}
+
+.navbar .logo {
+    display: flex;
+    margin-right: 75px;
+    width: auto;
+    height: 75px;
     border: 2px solid purple;
 }
 
@@ -56,7 +57,7 @@
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background: none;
-    color: black;
+    color: white;
 	font-family: "Comfortaa";
 	font-size: 16px;
     font-weight: normal;
@@ -68,15 +69,15 @@
 .navbar .contacts:hover .contacts-heading {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    background-color: black;
-	color: white;
+    background-color: white;
+	color: rgb(42, 43, 46);
 }
 
 .navbar .contacts-content {
     border-top-right-radius: 15px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.5));
+    background: linear-gradient(to bottom, rgb(42, 43, 46, 0.75),rgba(42, 43, 46, 0.5));
     position: absolute;
     z-index: 1;
     transition: all 0.25s ease-in-out;
