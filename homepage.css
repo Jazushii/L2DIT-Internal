@@ -182,3 +182,7 @@ dark gray rgb(42, 43, 46)
     width: 700px;
     height: 450px;
 }
+
+.main-body .main-content .image img:hover {
+  	border: 2.5px solid black;
+}
