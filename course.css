@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Comfortaa);
 @import url(https://fonts.googleapis.com/css?family=Rock+Salt);
 @import url(https://fonts.googleapis.com/css?family=Pangolin);
-@import url(https://fonts.googleapis.com/css?family=Iansui);
+@import url(https://fonts.googleapis.com/css?family=Rubik);
 
 /*
 yellow rgb(212, 175, 55)
@@ -165,21 +165,41 @@ dark gray rgb(42, 43, 46)
     background: linear-gradient(to bottom, rgba(212, 175, 55, 0.75),rgba(212, 175, 55, 0.5));
     display: block;
     margin-left: 310px;
-    padding: 10px 20px;
     width: 100%;
     height: 435px;
 }
 
-.main-content .image img {
-    border: 2.5px dashed rgb(42, 43, 46);
-    border-radius: 20px;
-    display: flex;
-    float: left;
-    margin-left: 150px;
-    width: 660px;
-    height: 430px;
+.main-content .heading {
+    border-bottom: 3px dashed black;
+    font-family: "Rock Salt";
+    font-size: 28px;
+    text-align: center;
 }
 
-.main-content .image img:hover {
-  	border: 2.5px solid black;
+.main-content .subheading {
+    font-family: 'Pangolin';
+	font-size: 24px;
+    margin: 10px 20px 0px 20px;
+    border: 2px solid purple;
+}
+
+.main-content .paragraph {
+    font-family: "Rubik";
+    font-size: 16px;
+    text-align: justify;
+    text-indent: 30px;
+    margin: 5px 30px 0px 30px;
+    border: 2px solid purple;
+}
+
+.main-content .wiki {
+    border-radius: 10px;
+    background-color: rgb(42, 43, 46);
+    color: rgb(212, 175, 55);
+    text-decoration: none;
+    padding: 5px;
+}
+
+.main-content .wiki:hover {
+    font-weight: bold;
 }

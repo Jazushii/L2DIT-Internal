@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Comfortaa);
 @import url(https://fonts.googleapis.com/css?family=Rock+Salt);
 @import url(https://fonts.googleapis.com/css?family=Pangolin);
-@import url(https://fonts.googleapis.com/css?family=Rubik);
+@import url(https://fonts.googleapis.com/css?family=Iansui);
 
 /*
 yellow rgb(212, 175, 55)
@@ -163,17 +163,21 @@ dark gray rgb(42, 43, 46)
     backdrop-filter: blur(25px);
     border-radius: 15px;
     background: linear-gradient(to bottom, rgba(212, 175, 55, 0.75),rgba(212, 175, 55, 0.5));
-    display: block;
+    display: flex;
     margin-left: 310px;
+    padding: 10px 20px;
     width: 100%;
     height: 435px;
 }
 
+.main-content .content {
+    border: 2px solid purple;
+}
+
 .main-content .heading {
-    border-bottom: 3px dashed black;
     font-family: "Rock Salt";
     font-size: 28px;
-    text-align: center;
+    border: 2px solid purple;
 }
 
 .main-content .subheading {
@@ -190,4 +194,20 @@ dark gray rgb(42, 43, 46)
     text-indent: 30px;
     margin: 5px 30px 0px 30px;
     border: 2px solid purple;
+}
+
+.main-content .image {
+    border: 2px solid purple;
+}
+
+.main-content .image img {
+    border: 2.5px dashed rgb(42, 43, 46);
+    border-radius: 20px;
+    margin-left: 50px;
+    width: 660px;
+    height: 430px;
+}
+
+.main-content .image img:hover {
+  	border: 2.5px solid black;
 }
