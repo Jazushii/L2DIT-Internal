@@ -180,7 +180,6 @@ dark gray rgb(42, 43, 46)
     font-family: 'Pangolin';
 	font-size: 24px;
     margin: 10px 20px 0px 20px;
-    border: 2px solid purple;
 }
 
 .main-content .paragraph {
@@ -189,7 +188,6 @@ dark gray rgb(42, 43, 46)
     text-align: justify;
     text-indent: 30px;
     margin: 5px 30px 0px 30px;
-    border: 2px solid purple;
 }
 
 .main-content .wiki {

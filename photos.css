@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Comfortaa);
 @import url(https://fonts.googleapis.com/css?family=Rock+Salt);
 @import url(https://fonts.googleapis.com/css?family=Pangolin);
-@import url(https://fonts.googleapis.com/css?family=Iansui);
+@import url(https://fonts.googleapis.com/css?family=Rubik);
 
 /*
 yellow rgb(212, 175, 55)
@@ -182,12 +182,12 @@ dark gray rgb(42, 43, 46)
 }
 
 .main-content .gallery {
-	margin: 10px auto;
-    border: 2px solid red;
+    margin: auto;
+    width: 810px;
 }
 
 .main-content .image {
-	margin: 10px;
+	margin: 5px;
   	border: 2px dotted black;
 	float: left;
 }
@@ -198,7 +198,7 @@ dark gray rgb(42, 43, 46)
 
 .main-content .image img {
   	width: auto;
-	height: 200px;
+	height: 170px;
 }
 
 .main-content .image .description {
@@ -206,5 +206,4 @@ dark gray rgb(42, 43, 46)
     font-size: 16px;
     text-align: center;
     margin: 5px auto 0px auto;
-    border: 2px solid purple;
 }
