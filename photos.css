@@ -89,7 +89,7 @@ dark gray rgb(42, 43, 46)
     background: linear-gradient(to bottom, rgb(42, 43, 46, 0.75),rgba(42, 43, 46, 0.5));
     position: absolute;
     z-index: 1;
-    transition: all 0.25s ease-in-out;
+    transition: all 0.15s ease-in-out;
     opacity: 0;
     overflow-y: hidden;
     pointer-events: none;
@@ -102,7 +102,7 @@ dark gray rgb(42, 43, 46)
 
 .navbar .contacts-information {
     color: white;
-    font-family: "Iansui";
+    font-family: "Rubik";
     font-size: 16px;
     transition: all 0.25s ease-in-out;
     padding: 10px;
@@ -132,15 +132,16 @@ dark gray rgb(42, 43, 46)
 }
 
 .hyperlinks ul li a {
+    backdrop-filter: blur(25px);
     display: block;
     border-radius: 30px;
-    background-color: rgb(42, 43, 46);
+    background-color: rgba(42, 43, 46, 0.75);
     color: rgb(212, 175, 55);
     font-family: "Comfortaa";
 	font-size: 22px;
     text-align: center;
     text-decoration: none;
-    margin-top: 5px;
+    margin-bottom: 10px;
     padding-top: 55px;
     transition: all 0.15s ease-in-out;
     width: 300px;
@@ -148,21 +149,30 @@ dark gray rgb(42, 43, 46)
 }
 
 .hyperlinks ul li a:hover:not(.active) {
-    background-color: rgb(212, 175, 55);
+    backdrop-filter: blur(25px);
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background: linear-gradient(to left, rgba(212, 175, 55, 0.75),rgba(212, 175, 55, 0.5));
     color: rgb(42, 43, 46);
+    font-weight: bold;
+    width: 310px;
 }
 
 .hyperlinks ul li a.active {
+    backdrop-filter: blur(25px);
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
-    background-color: rgb(212, 175, 55);
+    background: linear-gradient(to left, rgba(212, 175, 55, 0.75),rgba(212, 175, 55, 0.5));
     color: rgb(42, 43, 46);
+    font-weight: bold;
+    width: 310px;
 }
 
 .main-content {
     backdrop-filter: blur(25px);
-    border-radius: 15px;
-    background: linear-gradient(to bottom, rgba(212, 175, 55, 0.75),rgba(212, 175, 55, 0.5));
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: rgba(212, 175, 55, 0.75);
     display: flex;
     margin-left: 310px;
     padding: 10px 20px;
@@ -188,22 +198,31 @@ dark gray rgb(42, 43, 46)
 
 .main-content .image {
 	margin: 5px;
-  	border: 2px dotted black;
 	float: left;
 }
 
-.main-content .image:hover {
-  	border: 2px solid black;
-}
-
 .main-content .image img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: 2px dashed rgb(42, 43, 64);
   	width: auto;
 	height: 170px;
 }
 
+.main-content .image img:hover {
+    border: 2px solid rgb(42, 43, 64);
+}
+
 .main-content .image .description {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-right: 2px dashed rgb(42, 43, 64);
+    border-bottom: 2px dashed rgb(42, 43, 64);
+    border-left: 2px dashed rgb(42, 43, 64);
+    background-color: rgba(132, 132, 130, 0.5);
     font-family: "Rubik";
     font-size: 16px;
     text-align: center;
-    margin: 5px auto 0px auto;
+    padding: 5px 0px;
+    margin: 0px auto;
 }
