@@ -201,18 +201,6 @@ dark gray rgb(42, 43, 46)
 	float: left;
 }
 
-.main-content .image img {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border: 2px dashed rgb(42, 43, 64);
-  	width: auto;
-	height: 170px;
-}
-
-.main-content .image img:hover {
-    border: 2px solid rgb(42, 43, 64);
-}
-
 .main-content .image .description {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -225,4 +213,95 @@ dark gray rgb(42, 43, 46)
     text-align: center;
     padding: 5px 0px;
     margin: 0px auto;
+}
+
+.main-content .image .description:hover {
+    border-right: 2px solid rgb(42, 43, 64);
+    border-bottom: 2px solid rgb(42, 43, 64);
+    border-left: 2px solid rgb(42, 43, 64);
+}
+
+/* Image */
+.main-content #myImg {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border: 2px dashed rgb(42, 43, 64);
+  	width: auto;
+	height: 170px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Image Hover */
+.main-content #myImg:hover {
+    border: 2px solid rgb(42, 43, 64);
+}
+
+/* The Modal (background) */
+.main-content .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 10px; /* Location of the box */
+    left: -350px;
+    top: -145;
+    width: 1366px; /* Full width */
+    height: 623px; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.85); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    margin-top: 25px;
+    width: 825px;
+    height: 537.5px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    display: block;
+    color: rgb(255, 255, 255);
+    font-family: "Rubik";
+    font-size: 16px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: rgb(255, 255, 255);
+    font-size: 64px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
 }
